@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "bin/assume-unchanged.sh",
     "lint": "eslint",
-    "test": "jest"
+    "test": "jest --runInBand --detectOpenHandles"
   },
   "repository": {
     "type": "git",
