@@ -4,7 +4,7 @@
   "description": "",
   "main": "some.test.js",
   "scripts": {
-    "preinstall": "bin/assume-unchanged.sh",
+    "preinstall": "bin/preinstall.sh",
     "lint": "eslint",
     "test": "jest --runInBand --detectOpenHandles"
   },
