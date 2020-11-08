@@ -1,0 +1,32 @@
+{
+  "name": "assume-unchanged-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "some.test.js",
+  "scripts": {
+    "preinstall": "bin/assume-unchanged.sh",
+    "lint": "eslint",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snigo/assume-unchanged-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snigo/assume-unchanged-demo/issues"
+  },
+  "homepage": "https://github.com/snigo/assume-unchanged-demo#readme",
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "husky": "^4.3.0",
+    "jest": "^26.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
